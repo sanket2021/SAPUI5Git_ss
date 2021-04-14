@@ -14,6 +14,8 @@
 					<Button text="{i18n>Clear}" press="onPressClear" type="Reject"></Button>
 					<Button text="{i18n>Navigate}" press="onPressNavigate" type="Emphasized"></Button>
 					<Input id="input1"/>
+						<Button text="Demo" type="Emphasized"></Button>
+					
 				</content>
 			</Page>
 		</pages>
