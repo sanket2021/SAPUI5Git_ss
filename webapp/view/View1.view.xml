@@ -1,0 +1,21 @@
+<mvc:View controllerName="com.sanketMyFirstUI5App.controller.View1" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:mvc="sap.ui.core.mvc"
+	displayBlock="true" xmlns="sap.m">
+	<App id="app">
+		<pages>
+			<Page title="{i18n>title}">
+				<content>
+					<Label text="{i18n>First name}" labelFor="input-a"/>
+					<Input id="Fname" placeholder="Enter First name"/>
+					<Label text="{i18n>Last name}" labelFor="input-b"/>
+					<Input id="Lname" placeholder="Enter Last name"/>
+					<Label text="{i18n>Age}" labelFor="input-c"/>
+					<Input id="Age" placeholder="Enter Age"/>
+					<Button text="{i18n>Submit}" press="onPressSubmit" type="Accept"></Button>
+					<Button text="{i18n>Clear}" press="onPressClear" type="Reject"></Button>
+					<Button text="{i18n>Navigate}" press="onPressNavigate" type="Emphasized"></Button>
+					<Input id="input1"/>
+				</content>
+			</Page>
+		</pages>
+	</App>
+</mvc:View>

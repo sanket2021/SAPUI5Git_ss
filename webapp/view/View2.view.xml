@@ -1,0 +1,61 @@
+<mvc:View xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" controllerName="com.sanketMyFirstUI5App.controller.View2"
+	xmlns:html="http://www.w3.org/1999/xhtml" xmlns:f="sap.ui.layout.form"
+	 xmlns:l="sap.ui.layout">
+	<App>
+		<pages>
+			<Page title="Title">
+				<content>
+					<VBox class="sapUiSmallMargin">
+		<f:SimpleForm id="SimpleFormChange354"
+			editable="true"
+			layout="ResponsiveGridLayout"
+			title="Address"
+			labelSpanXL="3"
+			labelSpanL="3"
+			labelSpanM="3"
+			labelSpanS="12"
+			adjustLabelSpan="false"
+			emptySpanXL="4"
+			emptySpanL="4"
+			emptySpanM="4"
+			emptySpanS="0"
+			columnsXL="1"
+			columnsL="1"
+			columnsM="1"
+			singleContainerFullSize="false" >
+			<f:content>
+				<Label text="Name" />
+				<Input id="name1" value="{SupplierName}" />
+				<Label text="Street/No." />
+				<Input value="{Street}">
+				</Input>
+				<Input value="{HouseNumber}">
+					<layoutData>
+						<l:GridData span="XL1 L2 M2 S4" />
+					</layoutData>
+				</Input>
+				<Label text="ZIP Code/City" />
+				<Input value="{ZIPCode}">
+					<layoutData>
+						<l:GridData span="XL1 L2 M2 S4" />
+					</layoutData>
+				</Input>
+				<Input value="{City}" />
+				<Label text="Country" />
+				<Select id="country" selectedKey="{Country}">
+					<items>
+						<core:Item text="England" key="England"/>
+						<core:Item text="Germany" key="Germany"/>
+						<core:Item text="USA" key="USA"/>
+					</items>
+				</Select>
+			</f:content>
+		</f:SimpleForm>
+	</VBox>
+					
+					
+				</content>
+			</Page>
+		</pages>
+	</App>
+</mvc:View>
